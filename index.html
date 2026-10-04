@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather & Movie Search App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Weather & Movie Search</h1>
+
+        <nav>
+            <a href="#weather">Weather</a>
+            <a href="#movies">Movies</a>
+        </nav>
+    </header>
+
+
+    <!-- WEATHER APP -->
+    <section id="weather" class="section">
+
+        <h2>🌤️ Weather App</h2>
+
+        <p>Search current weather by city</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="getWeather()">
+                Search Weather
+            </button>
+
+        </div>
+
+        <div id="weatherResult" class="result">
+            <p>Enter a city to see weather information.</p>
+        </div>
+
+    </section>
+
+
+    <!-- MOVIE APP -->
+    <section id="movies" class="section">
+
+        <h2>🎬 Movie Search App</h2>
+
+        <p>Search for your favorite movies</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="movieInput"
+                placeholder="Enter movie name"
+            >
+
+            <button onclick="searchMovies()">
+                Search Movie
+            </button>
+
+        </div>
+
+        <div id="movieResult" class="movie-container">
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Weather & Movie Search App
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

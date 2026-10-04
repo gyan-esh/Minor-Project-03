@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background: #172554;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+
+/* SECTIONS */
+
+.section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.section h2 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+
+/* SEARCH */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+
+/* WEATHER RESULT */
+
+.result {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #eff6ff;
+    border-radius: 12px;
+}
+
+.weather-card h3 {
+    font-size: 28px;
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.weather-card p {
+    margin: 10px;
+}
+
+
+/* MOVIE RESULTS */
+
+.movie-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.movie-card {
+    background: #f8fafc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    margin: 15px 10px 8px;
+    color: #172554;
+}
+
+.movie-card p {
+    margin: 8px;
+    color: #555;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .section {
+        margin: 20px 10px;
+        padding: 30px 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
